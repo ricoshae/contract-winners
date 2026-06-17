@@ -189,7 +189,10 @@ def scan_contracts():
         print(f"Output written to: {CSV_FILE}")
         print()
         for i, m in enumerate(matches, 1):
-            value_str = f"${m['Value']:,.2f} {m['Currency']}" if m["Value"] else "N/A"
+            try:
+                value_str = f"${float(m['Value']):,.2f} {m['Currency']}"
+            except (ValueError, TypeError):
+                value_str = "N/A"
             print(f"{i}. {m['Contract Title'][:80]}")
             print(f"   Supplier: {m['Supplier Name']} | Value: {value_str}")
             print(f"   Keyword: '{m['Matched Keyword']}' | {m['AusTender Link']}")
