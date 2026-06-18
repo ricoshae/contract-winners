@@ -116,7 +116,7 @@ def extract_match(release, matched_keyword):
         "Supplier Email": contact.get("email", ""),
         "Buyer/Agency": buyer.get("name", ""),
         "Matched Keyword": matched_keyword,
-        "AusTender Link": f"https://www.tenders.gov.au/Cn/Show/{cn_id}" if cn_id else "",
+        "AusTender Link": f"https://www.tenders.gov.au/Search/KeywordSearch?keyword={cn_id}" if cn_id else "",
     }
 
 
