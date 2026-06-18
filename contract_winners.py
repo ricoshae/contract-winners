@@ -15,7 +15,7 @@ KEYWORDS = [
     "h5p", "scorm", "xapi", "tin can", "articulate rise", "articulate storyline",
     "learning design", "instructional design", "course development",
     # Training & education services
-    "training platform", "training system", "training portal",
+    "training platform", "training portal",
     "education platform", "education technology", "edtech",
     "student management", "learning platform", "learning portal",
     # Broad terms (higher volume, lower precision)
